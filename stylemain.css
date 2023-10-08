@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('lolfont.otf') format('opentype');
+}
+
+body {
+    font-family: 'CustomFont', Arial, sans-serif;
+    background-image: url("images/summonersrift.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#login {
+    color: white;
+}
+
+.nav-middle {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-direction: row;
+    padding-left: 30px;
+}
+
+.nav-link {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin-left: -30px;
+}
+
+.card {
+    margin-top: 20px;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card a {
+    display: block;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.card-img-top {
+    height: 380px;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 70px;
+    text-align: center;
+    background-color: rgba(28, 53, 77, 0.5);
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+@media (max-width: 1400px) {
+    .card-title {
+        font-size: 11px;
+    }
+    .nav-link {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card-title {
+        font-size: 10px;
+    }
+    .nav-link {
+        font-size: 11.5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-link {
+        margin-left: 5px;
+        margin-right: 5px;
+    }     
+}
